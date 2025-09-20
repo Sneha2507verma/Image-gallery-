@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Image Gallery</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('animals')">Animals</button>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <div class="item nature"><img src="https://picsum.photos/id/1015/400/300" alt="Nature 1"></div>
+    <div class="item city"><img src="https://picsum.photos/id/1011/400/300" alt="City 1"></div>
+    <div class="item animals"><img src="https://picsum.photos/id/1025/400/300" alt="Animal 1"></div>
+    <div class="item nature"><img src="https://picsum.photos/id/1016/400/300" alt="Nature 2"></div>
+    <div class="item city"><img src="https://picsum.photos/id/1003/400/300" alt="City 2"></div>
+    <div class="item animals"><img src="https://picsum.photos/id/237/400/300" alt="Animal 2"></div>
+    <div class="item nature"><img src="images/nature1.jpg" alt="Nature 1"></div>
+  <div class="item city"><img src="images/city1.jpg" alt="City 1"></div>
+  <div class="item animals"><img src="images/animal1.jpg" alt="Animal 1"></div>
+  <div class="item nature"><img src="images/nature2.jpg" alt="Nature 2"></div>
+  <div class="item city"><img src="images/city2.jpg" alt="City 2"></div>
+  <div class="item animals"><img src="images/animal2.jpg" alt="Animal 2"></div>
+  <div class="item nature"><img src="images/nature4.jpg" alt="nature 4"></div>
+  <div class="item nature"><img src="images/nature3.jpg" alt="nature 3"></div>
+  <div class="item city"><img src="images/city4.jpg" alt="city 4"></div>
+  <div class="item city"><img src="images/city3.jpg" alt="city 3"></div>
+  <div class="item animals"><img src="images/animal3.jpg" alt="Animal 3"></div>
+  <div class="item animals"><img src="images/animal4.jpg" alt="Animal 4"></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
